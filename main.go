@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pj3677/gomovies/movies"
 	"github.com/mitchellh/colorstring"
+	"github.com/peterj/gomovies/movies"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	fmt.Println(colorstring.Color(textColor + movie.Title))
 }
 
-func getColorForRating(ratingStr string) (string) {
+func getColorForRating(ratingStr string) string {
 	textColor := "[default]"
 	if ratingStr != "N/A" {
 		rating, err := strconv.Atoi(ratingStr)
@@ -39,7 +39,7 @@ func getColorForRating(ratingStr string) (string) {
 			textColor = "[default]"
 		}
 	}
-	
+
 	return textColor
 }
 
