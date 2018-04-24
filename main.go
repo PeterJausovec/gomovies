@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pj3677/gomovies/movies"
+	"github.com/peterj/gomovies/movies"
 	"github.com/mitchellh/colorstring"
 )
 
